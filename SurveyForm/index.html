@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 id="title">DevSaint Survey Form</h1>
+  <p id="description">Please give your feedback about this page</p><br>
+  <form action="" id="survey-form">
+    <label class="header" id="name-label" for="name">Name:</label><br>
+    <input class="field" type="text" required id="name" placeholder="Enter your name"><br>
 
+    <label class="header" id="email-label" for="email">Email Address:</label><br>
+    <input class="field" type="email" required id="email" placeholder="example@abcmail.com"><br>
+
+    <label class="header" id="number-label" for="number">Age:</label><br>
+    <input class="field" type="number" id="number" min="12" max="99" placeholder="18"><br>
+
+    <label class="header" id="dropdown-label" for="dropdown">What about this page do you like most:</label><br>
+    <select class="field" id="dropdown">
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+      <option value="JS">JavaScript</option>
+    </select>
+
+    <p class="header">What is your level of web development knowledge?</p>
+    <input type="radio" id="low" name="background" value="low">
+    <label id="low-label" for="low">None</label>
+    <input type="radio" id="med" name="background" value="med">
+    <label id="med-label" for="med">Intermediate</label>
+    <input type="radio" id="high" name="background" value="high">
+    <label id="high-label" for="high">Advanced</label>
+    
+    <p class="header">What parts of this page can be improved?</p>
+    <input type="checkbox" id="cb-1" value="styling">
+    <label id="cb-1-label" for="cb-1">Styling</label><br>
+    <input type="checkbox" id="cb-2" value="featurs">
+    <label id="cb-2-label" for="cb-3">Features</label><br>
+    <input type="checkbox" id="cb-3" value="interaction">
+    <label id="cb-3-label" for="cb-3">Interaction</label><br>
+    <input type="checkbox" id="cb-4" value="font">
+    <label id="cb-4-label" for="cb-4">Fonts</label><br>
+    <input type="checkbox" id="cb-5" value="animation">
+    <label id="cb-5-label" for="cb-5">Animations</label><br>
+
+    <p class="header">Do you have any additional comments?</p>
+    <textarea placeholder="... comments"></textarea><br>
+    <input type="submit" id="submit">
+  </form>
+</body>
+</html>
